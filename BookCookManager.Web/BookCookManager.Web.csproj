@@ -128,9 +128,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\RecipeViewModel.cs" />
+    <Compile Include="Models\UserData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -148,7 +151,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\UserData\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookCookManager.BusinessLogic\BookCookManager.BusinessLogic.csproj">
+      <Project>{7023eda6-d904-41ea-9e7a-bf4ea5e7bd56}</Project>
+      <Name>BookCookManager.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookCookManager.Domain\BookCookManager.Domain.csproj">
+      <Project>{79a17e36-1b2d-42d4-98cd-d34e482b69c2}</Project>
+      <Name>BookCookManager.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
