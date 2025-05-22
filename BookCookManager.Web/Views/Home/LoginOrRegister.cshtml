@@ -1,0 +1,11 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Authentication";
+}
+
+<div class="text-center p-5 bg-light rounded shadow" style="max-width: 400px; margin: auto;">
+    <h1 class="mb-4">Are you registered?</h1>
+    <a href="@Url.Action("Login", "LoginOrRegister")" class="btn btn-primary mb-3 w-100" style="background-color:#CDB4DB; border:none;">Login</a>
+    <p>Don't have an account?</p>
+    <a href="@Url.Action("Register", "LoginOrRegister")" class="btn btn-secondary w-100" style="background-color:#FFC8DD; border:none;">Register</a>
+</div>

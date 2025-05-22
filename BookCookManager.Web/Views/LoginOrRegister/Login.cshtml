@@ -1,0 +1,21 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Login";
+}
+
+<div class="p-4 bg-light rounded shadow" style="max-width: 400px; margin: auto;">
+    <h2 class="mb-4">Login</h2>
+
+    @using (Html.BeginForm("Login", "LoginOrRegister", FormMethod.Post))
+    {
+        <div class="mb-3">
+            <input type="text" name="username" class="form-control" placeholder="Username" required />
+        </div>
+        <div class="mb-3">
+            <input type="password" name="password" class="form-control" placeholder="Password" required />
+        </div>
+        <button type="submit" class="btn w-100" style="background-color:#CDB4DB; border:none;">Login</button>
+    }
+
+    <p class="mt-3">Don't have an account? <a href="@Url.Action("Register", "LoginOrRegister")">Register here</a>.</p>
+</div>
