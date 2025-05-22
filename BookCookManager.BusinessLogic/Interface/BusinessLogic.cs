@@ -4,8 +4,7 @@ using System.Text;
 
 namespace BookCookManager.BusinessLogic.Interface
 {
-    public interface IUserServices
+    public class BusinessLogic
     {
-       
     }
 }
