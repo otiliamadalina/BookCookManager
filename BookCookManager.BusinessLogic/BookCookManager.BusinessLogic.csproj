@@ -1,18 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookCookManager.Domain\BookCookManager.Domain.csproj" />
-    <ProjectReference Include="..\BookCookManager.Helpers\BookCookManager.Helpers.csproj" />
+    <Folder Include="DBModel\Seed\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DBModel\Seed\" />
+    <ProjectReference Include="..\BookCookManager.Domain\BookCookManager.Domain.csproj" />
+    <ProjectReference Include="..\BookCookManager.Helper\BookCookManager.Helper.csproj" />
   </ItemGroup>
 
 </Project>

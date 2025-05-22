@@ -1,17 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookCookManager.Helpers\BookCookManager.Helpers.csproj" />
+    <Folder Include="Entities\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\Enums\" />
+    <ProjectReference Include="..\BookCookManager.Helper\BookCookManager.Helper.csproj" />
   </ItemGroup>
 
 </Project>

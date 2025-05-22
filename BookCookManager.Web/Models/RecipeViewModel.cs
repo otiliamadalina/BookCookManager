@@ -11,7 +11,7 @@ namespace BookCookManager.Web.Models
         public string RecipeTitle { get; set; }
         public string RecipeDescription { get; set; }
         public string RecipeIngredients { get; set; }
-        public RecipeStatus Status { get; set; }
+       // public RecipeStatus Status { get; set; }
 
     }
 }

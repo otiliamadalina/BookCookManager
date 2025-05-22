@@ -1,0 +1,47 @@
+﻿body {
+    padding-top: 70px; 
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    background: linear-gradient(90deg, #ffd6e8, #ffb6c1, #ffc1cc);
+    box-shadow: 0 2px 8px rgba(255, 182, 193, 0.3);
+    border-radius: 0 0 8px 8px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-pink {
+    background: linear-gradient(90deg, #ffd6e8, #ffb6c1, #ffc1cc);
+    box-shadow: 0 2px 8px rgba(196, 70, 103, 0.4);
+}
+
+    .navbar-pink .nav-link {
+        color: #a0345e;
+        font-weight: 600;
+    }
+
+.login-card {
+    background: #ffb6c1; 
+    color: #4a0a2a; 
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.6);
+    border: 1px solid #f7a9b9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+    .login-card:hover, .login-card:focus {
+        background: #a0345e;
+        color: #fff;
+        box-shadow: 0 6px 12px rgba(160, 52, 94, 0.8);
+        text-decoration: none;
+    }
+

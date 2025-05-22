@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookCookManager.BusinessLogic.Core
+namespace BookCookManager.BusinessLogic.Interface
 {
-    internal class AdminApi
+    internal interface IUserServices
     {
     }
 }
